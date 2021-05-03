@@ -1,9 +1,11 @@
 <?php	
 	/* Template Name: Home */
 	get_header();
-	
-
 ?>
+<div class="container">
+  <img src="http://localhost/wordpress/wp-content/uploads/2021/05/66320556_685900268545399_4995496850187354112_n.png" alt="Snow" style="width:100%;">
+  <div class="centered">Music City</div>
+</div>
 <div class="container">
 		<!--slide show -->
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -39,4 +41,22 @@
 	</div>
 	<!--end slide show -->
 </div>
+
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 700%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white
+}
+</style>
 <?php get_footer(); ?>
